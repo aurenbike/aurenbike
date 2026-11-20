@@ -106,6 +106,13 @@
 
     footer p { margin: 0; }
 
+    .emails {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0 10px;
+    }
+
     .org-link {
       display: block;
       width: fit-content;
@@ -208,7 +215,11 @@
 
   <footer>
     <a class="org-link" href="../" aria-label="AurenBike home"><img class="org-logo" src="../img/aurenbike.svg" alt="AurenBike" width="2624" height="1328"></a>
-    <p><a href="mailto:geral@aurenbike.org">geral@aurenbike.org</a></p>
+    <p class="emails">
+      <a href="mailto:geral@aurenbike.org">geral@aurenbike.org</a>
+      <span aria-hidden="true">·</span>
+      <a href="mailto:aurenbike@gmail.com">aurenbike@gmail.com</a>
+    </p>
     <p>&copy; 2026 Associação Desportiva AurenBike. All rights reserved.</p>
   </footer>
 </body>
